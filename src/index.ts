@@ -1,11 +1,16 @@
-import { AopOptions } from './types'
+type Func = (...args: any[]) => any
+
+interface AopOptions {
+  before?: Func
+  after?: Func
+}
 
 export default function aop(
-  fn: (...args: any[]) => any,
+  fn: Func,
   options?: AopOptions
-): (...args: any[]) => any {
+): Func {
   const { before, after } = options || {}
-  return function(...args: any[]) {
+  return function(...args: any[]): Func {
     const self = this
 
     if (before) {
