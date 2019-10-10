@@ -1,6 +1,6 @@
 # super-aop
 
-实现JavaScript aop面向切面编程
+TypeScript实现aop面向切面编程
 
 ### Usage
 
