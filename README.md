@@ -31,3 +31,6 @@ fn = aop(fn, {
 // after
 // 1
 ```
+
+### docs
+https://sl1673495.github.io/super-aop/
