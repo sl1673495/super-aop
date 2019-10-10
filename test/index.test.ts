@@ -97,4 +97,15 @@ describe("aop test", () => {
     aopSource(1)
     expect(dummy).toBe(2)
   })
+
+  it("right this refrence", () => {
+    const a = {
+      b() {
+        return this
+      }
+    }
+
+    a.b = aop(a.b)
+    expect(a.b()).toBe(a)
+  })
 })
