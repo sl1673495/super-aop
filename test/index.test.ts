@@ -10,7 +10,7 @@ describe("aop test", () => {
       return true
     }
     const aopSource = aop(source)
-    expect(aopSource()).toBeTruthy()
+    expect(aopSource()).toBe(true)
   })
 
   it("before works and will affect source's result", () => {
@@ -81,7 +81,7 @@ describe("aop test", () => {
       return a
     }
     const aopSource = aop(source)
-    expect(aopSource(true)).toBeTruthy()
+    expect(aopSource(true)).toBe(true)
   })
 
   it("after could receive source's return", () => {
