@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "dist/super-aop.umd.js",
   "module": "dist/super-aop.es5.js",
-  "typings": "dist/types/super-aop.d.ts",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
